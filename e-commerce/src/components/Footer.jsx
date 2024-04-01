@@ -2,6 +2,7 @@ import React from 'react'
 import styles from "../css/Footer.module.css"
 import logo from "../../public/logo-transparent-svg.svg"
 import { FacebookSharp, Instagram, Twitter, YouTube } from '@mui/icons-material'
+import { Link } from 'react-router-dom'
 
 function Footer() {
     return (
@@ -9,9 +10,9 @@ function Footer() {
             <div className={styles.footer_links}>
                 {/* Logo Section */}
                 <div className={styles.logo}>
-                    <a className={styles.logo_link} href="/">
+                    <Link className={styles.logo_link} to={'/'}>
                         <img className={styles.logo_img} src={logo} alt="" />
-                    </a>
+                    </Link>
 
                     <p className={styles.logo_brand}>Nous avons des vêtements qui correspondent<br />
                         à votre style et que vous êtes fier de porter.<br /> Des femmes aux hommes.</p>

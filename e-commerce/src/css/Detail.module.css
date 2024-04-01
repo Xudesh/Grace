@@ -383,3 +383,148 @@
     font-size: 15px;
     font-weight: 600;
 }
+
+
+
+@media screen and (max-width: 1024px) {
+    .main_image img{
+        width: 250px;
+        height: 300px;
+    }
+
+    .secondary_images img{
+        width: 120px;
+        height: 130px;
+    }
+
+    .name{
+        font-size: 28px;
+    }
+
+    .about{
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    .real_price{
+        font-size: 21px;
+    }
+
+    .discount{
+        font-size: 14.5px;
+        width: 55px;
+    }
+
+    .about_review_comment{
+        width: 370px;
+    }
+}
+
+
+@media screen and (max-width: 826px){
+        .card_detail{
+            flex-direction: column;
+        }
+
+        .card_detail_images img{
+            height: max-content;
+            
+        }
+
+        .secondary_images .secondary_img{
+            width: 130px;
+            height: 155px;
+        }
+
+        .main_image .main_img{
+            width: 290px;
+            height: 332px;
+        }
+
+        
+}
+
+
+
+@media screen and (max-width: 469px){
+    .card_detail{
+        flex-direction: column;
+    }
+
+    .card_detail_images{
+        flex-direction: column-reverse;
+        gap: 17px;
+    }
+
+    .secondary_images{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .main_image{
+        justify-content: center;
+        display: flex;
+    }
+
+    .main_image .main_img{
+        height: 275px;
+        width: 270px;
+    }
+
+    .name{
+        font-size: 23px;
+    }
+
+    .text{
+        font-size: 15px;
+    }
+
+    .select_size span{
+        padding: 7.2px 14px;
+        font-size: 12.6px;
+    }
+
+    .order_btn{
+        padding: 8px 50px;
+    }
+
+    .filters{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .real_price{
+        font-size: 19px;
+    }
+}
+
+
+@media screen and (max-width: 347px) {
+    .main_image .main_img{
+        width: 230px;
+        height: 230px;
+    }
+
+    .secondary_images .secondary_img{
+        width: 110px;
+        height: 110px;
+    }
+
+    .name{
+        font-size: 18px;
+    }
+
+    .available{
+        padding: 8px 40px;
+        font-size: 14.6px;
+    }
+
+    .available img.plus, .available img.minus{
+        width: 18px;
+    }
+
+    .about_review_comment{
+        width: 300px;
+    }
+}

@@ -31,8 +31,8 @@ function Detail() {
           <div className={styles.card_detail_images}>
 
             <div className={styles.secondary_images}>
-              <img className={styles.secondary_img} width={'200px'} src={secondry_img1} alt="" />
-              <img className={styles.secondary_img} width={'200px'} src={secondry_img2} alt="" />
+              <img className={styles.secondary_img} width={'200px'} src={selectedProduct.back_img} alt="" />
+              <img className={styles.secondary_img} width={'200px'} src={selectedProduct.front_img} alt="" />
             </div>
 
             <div className={styles.main_image}>
@@ -84,7 +84,7 @@ function Detail() {
 
                 </div>
                 <div className={styles.buy}>
-                  <button className={styles.order_btn} onClick={() => dispatch(setCartItem(detail))}>Add to Cart</button>
+                  <button className={styles.order_btn} onClick={() => dispatch(setCartItem(selectedProduct))}>Add to Cart</button>
                 </div>
 
               </div>
@@ -195,7 +195,7 @@ function Detail() {
         </div>
       </section>
 
-      <section className={styles.other_products}>
+      {/* <section className={styles.other_products}>
         <h1 className={styles.other_product_head}>You might also like</h1>
 
         <div className={styles.other_cards}>
@@ -423,7 +423,7 @@ function Detail() {
           </div>
 
         </div>
-      </section>
+      </section> */}
     </div>
   )
 }

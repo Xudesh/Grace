@@ -504,4 +504,8 @@
     .cart_head{
         font-size: 21px;
     }
+
+    .error{
+        font-size: 18px;
+    }
 }

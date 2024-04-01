@@ -23,7 +23,7 @@ function Home() {
 
 
     useEffect(() => {
-        getProduct("http://127.0.0.1:8000/", dispatch)
+        getProduct("https://xudesh.pythonanywhere.com/?format=json", dispatch)
     }, [])
     return (
         <div className={styles.Home}>

@@ -27,9 +27,9 @@ function Header() {
               <img className={sidebar ? styles.logo_menu_img : styles.logo_menu_img_deg} src={menuIcon} alt="Menu" />
             </button>
 
-            <a href="/">
+            <Link to={'/'}>
               <img alt='logo' src={logo} />
-            </a>
+            </Link>
 
         </div>
 
