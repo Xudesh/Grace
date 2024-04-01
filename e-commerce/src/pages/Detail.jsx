@@ -91,7 +91,7 @@ function Detail() {
 
                 </div>
                 <div className={styles.buy}>
-                  <button className={styles.order_btn}>Add to Cart</button>
+                  <button className={styles.order_btn} onClick={() => dispatch(setCartItem(detail))}>Add to Cart</button>
                 </div>
 
               </div>
