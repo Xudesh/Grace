@@ -18,7 +18,8 @@ class Product(models.Model):
     price = models.IntegerField(null=True)
     discount = models.IntegerField(max_length=2, null=True, blank=True)
     count = models.PositiveIntegerField(null=True, blank=True)
-
+    front_img = models.ImageField(upload_to='products/', null=True)
+    back_img = models.ImageField(upload_to='products/', null=True)
 
     def __str__(self):
         return F"{self.name} - {self.sizes}"

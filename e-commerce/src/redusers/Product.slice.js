@@ -2,7 +2,8 @@ import { createSlice } from "@reduxjs/toolkit"
 
 const initialState = {
     isLoading: false,
-    products: []
+    products: [],
+
 }
 
 const ProductSlice = createSlice({
@@ -20,7 +21,9 @@ const ProductSlice = createSlice({
 
         loadedError(state) {
             state.isLoading = false
-        }
+        },
+
+
     }
 })
 

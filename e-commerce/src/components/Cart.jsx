@@ -18,7 +18,7 @@ function Cart() {
     const dispatch = useDispatch()
 
 
-    console.log(`Carts = ${cart.length} countCartItem = ${countCartItem.length}`)
+    console.log(`Carts = ${cart.length} countCartItem = ${countCartItem.length} ${cart}`)
 
 
     return (

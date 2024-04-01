@@ -2,8 +2,8 @@ import { createSlice } from "@reduxjs/toolkit"
 
 const initialState = {
     isLoading: false,
-    detail : []
-
+    detail : [],
+    selectedProduct: [],
 }
 
 
@@ -23,10 +23,13 @@ const DetailSlice = createSlice({
         loadedError(state) {
             state.isLoading = false
             console.log(state.detail)
+        },
 
-        }
+        setSelectedProduct(state, action) {
+            state.selectedProduct = action.payload;
+          },
     }
 })
 
-export const {loadingProduct, loadedProduct, loadedError} = DetailSlice.actions
+export const {loadingProduct, loadedProduct, loadedError, setSelectedProduct} = DetailSlice.actions
 export default DetailSlice.reducer

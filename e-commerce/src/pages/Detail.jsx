@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from "../css/Detail.module.css"
 import main_img from "../assets/img/1.jpg"
 import secondry_img1 from "../assets/img/2.png"
@@ -9,31 +9,24 @@ import filterIcon from "../assets/filter-outline.svg"
 import { IoStarSharp } from "react-icons/io5";
 import first from "../assets/img/1.jpg"
 import { useDispatch, useSelector } from 'react-redux'
-import { getDetail, getProduct } from '../Axios/axios'
-import { setCartItem } from '../redusers/Cart.slice'
-import Cart from '../components/Cart'
-import { useParams } from 'react-router-dom'
 
+import { setCartItem } from '../redusers/Cart.slice'
 
 
 function Detail() {
 
-  const {detail} = useSelector(state => state.detail)
+  const { detail, selectedProduct } = useSelector(state => state.detail)
 
 
   const dispatch = useDispatch();
 
-  const params = useParams();
 
-
-  useEffect(() => {
-    getDetail(`http://127.0.0.1:8000/1/`, dispatch)
-  }, [])
 
   return (
     <div className={styles.detail}>
 
-        <section  className={styles.card_detail}>
+
+        <section className={styles.card_detail}>
 
           <div className={styles.card_detail_images}>
 
@@ -43,7 +36,7 @@ function Detail() {
             </div>
 
             <div className={styles.main_image}>
-              <img className={styles.main_img} width={'200px'} src={detail.image} alt="" />
+              <img className={styles.main_img} width={'200px'} src={selectedProduct.image} alt="" />
             </div>
 
           </div>
@@ -51,21 +44,21 @@ function Detail() {
           <div className={styles.card_detail_info}>
 
             <div className={styles.name}>
-              <p>{detail.name}</p>
+              <p>{selectedProduct.name}</p>
             </div>
 
             <div className={styles.review}>
-              4.5/5
+              <span>{selectedProduct.review}/5</span>
             </div>
 
             <div className={styles.price_discount}>
-              {detail.price }
-              <s className={styles.real_price}>${detail.price}</s>
-              {detail.discount? <span className={styles.discount}>{detail.discount}%</span> : ""}
+              ${selectedProduct.price}
+              <s className={styles.real_price}>${selectedProduct.price}</s>
+              {selectedProduct.discount ? <span className={styles.discount}>{selectedProduct.discount}%</span> : ""}
             </div>
 
             <div className={styles.about}>
-              <p>This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.</p>
+              <p>{selectedProduct.description}</p>
             </div>
 
             <div className={styles.sizes}>

@@ -23,25 +23,3 @@ export async function getProduct(url, dispatch) {
 }
 
 
-export async function getDetail(detail_url, dispatch) {
-    
-    
-    dispatch(loadingProduct())
-    const [detail, setDetail] = useState({})
-
-    await axios.get(detail_url)
-
-    .then(
-        res => {
-            dispatch(loadedProduct(res.data))
-            console.log(res.data)
-            setDetail(res.data)
-        }
-    )
-    
-    .catch(
-        err => {
-            dispatch(loadedError())
-        }
-    )
-}

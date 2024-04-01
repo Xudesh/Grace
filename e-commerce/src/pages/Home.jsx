@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import { getProduct } from '../Axios/axios';
 import { useSelector } from 'react-redux';
 import { useDispatch } from "react-redux";
+import { setSelectedProduct } from '../redusers/detail.slice';
 
 
 
@@ -44,7 +45,7 @@ function Home() {
                             <img src={item.image} alt={item.name} />
 
                             <div className={styles.card_info}>
-                                <Link to={`/detail/${item.id}`} className={styles.card_name}>{item.name}</Link>
+                                <Link to={`/detail/${item.id}`} onClick={() => { dispatch(setSelectedProduct(item)) }} className={styles.card_name}>{item.name}</Link>
 
                                 <div className={styles.review_stars}>
                                     <IoStarSharp color='#FFC633' />
