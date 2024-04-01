@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'Integral CF';
+    src: url('./Demo_Fonts/Fontspring-DEMO-integralcf-regular.otf') format('otf'),
+        url('./Demo_Fonts/Fontspring-DEMO-integralcf-heavy.otf') format('otf');
+
+}

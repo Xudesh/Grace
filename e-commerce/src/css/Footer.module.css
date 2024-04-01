@@ -1,0 +1,258 @@
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    padding: 0 3.5%;
+    padding-bottom: 10px;
+    align-items: center;
+}
+
+.footer_links{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 8px;
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.2);
+}
+
+/* Logo Section CSS */
+.logo{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.logo_img{
+    width: 134px;
+}
+
+
+.logo_brand{
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.social_links{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+
+/* Company Section CSS */
+
+.company{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: flex-start;
+}
+
+.company_heading{
+    color: black;
+    font-size: 18.4px;
+    letter-spacing: 1.01px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.company_link{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* Help Section CSS */
+.help{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: flex-start;
+}
+
+.help_heading{
+    color: black;
+    font-size: 18.4px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.01px;
+}
+
+
+.help_link{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* FAQ Section CSS */
+.faq{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: flex-start;
+}
+
+.faq_heading{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.01px;
+    font-size: 18.4px;
+}
+
+.faq_link{
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+
+
+/* Resoures Section CSS */
+.resources{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: flex-start;
+}
+
+.resource_heading{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.01px;
+    font-size: 18.4px;
+    text-transform: uppercase;
+}
+
+.resource_link{
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.privacy{
+    width: 100%;
+    margin: 10px 0;
+}
+
+.privacy_text{
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 14.1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+@media screen and (max-width: 1244px){
+
+    .logo_img{
+        width: 124px;
+    }
+
+    .logo_brand{
+        font-size: 14px;
+    }
+
+    .social_links a{
+        width: 21px;
+    }
+
+    .company_heading, .faq_heading, .help_heading, .resource_heading{
+        font-size: 16.2px;
+    }
+
+    .company_link, .faq_link, .help_link, .resource_link{
+        font-size: 15px;
+    }
+}
+
+
+
+@media screen and (max-width: 1204px){
+    .company_heading, .faq_heading, .help_heading, .resource_heading{
+        font-size: 15px;
+    }
+
+    .company_link, .faq_link, .help_link, .resource_link{
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 1024px){
+
+    .company_heading, .faq_heading, .help_heading, .resource_heading{
+        font-size: 14px;
+    }
+
+    .company_link, .faq_link, .help_link, .resource_link{
+        font-size: 13px;
+    }
+
+    .logo_brand{
+        font-size: 12.3px;
+    }
+
+    .footer_links {
+        flex-wrap: wrap;
+        gap: 40px;
+        padding-bottom: 22px;
+        justify-content: center;
+    }
+
+    .privacy_text{
+        font-size: 12.3px;
+    }
+}
+
+
+@media screen and (max-width: 395px){
+    .footer_links{
+        justify-content: space-around;
+    }
+
+    .company_heading, .faq_heading, .help_heading, .resource_heading{
+        font-size: 13px;
+    }
+
+    .company_link, .faq_link, .help_link, .resource_link{
+        font-size: 12px;
+    }
+
+    .logo_brand{
+        font-size: 12.1px;
+    }
+
+    .social_links{
+        gap: 25px;
+    }
+
+    .social_links img, .social_links a{
+        width: 10px;
+    }
+
+    .logo_img{
+        width: 100px;
+    }
+
+    .footer_links {
+        flex-wrap: wrap;
+        gap: 41px;
+        padding-bottom: 22px;
+        justify-content: center;
+    }
+
+    .privacy_text{
+        font-size: 11.3px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,431 @@
+/* Advertisement Section CSS */
+.preview{
+    max-width: 100%;
+    min-width: 100%;
+    background: url("https://terrapro.uz/upload/iblock/d23/vzlivfytfn7b343r9251qi337vyvl6tk/group-5.webp") center no-repeat;
+    background-size: cover;
+    min-height: 86vh;
+    max-height: 86vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.preview .title{
+    font-size: 60px;
+    font-weight: 900;
+}
+
+
+/* New Arrivals Product CSS */
+.new_arrivals {
+    margin: 65px 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.new_arrivals h2{
+    text-align: center;
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.product_cards{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px 0 30px;
+}
+
+
+.product_card{
+    width: 250px;
+    border-radius: 10px;
+}
+
+.product_card:hover{
+    box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.4s ease-in;
+}
+
+.product_card img{
+    width: 100%;
+    min-height: 258px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    max-height: 259px;
+}
+
+.card_info{
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.card_name{
+    font-weight: 600;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.review_stars{
+    display: flex;
+    gap: 2px;
+    align-items: center;
+}
+
+.star{
+    margin-left: 5px;
+    font-weight: 500;
+    color: black;
+    font-family: 'Integral CF';
+}
+
+.price_discount{
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.price{
+    font-weight: 700;
+    font-family: 'Integral CF';
+}
+
+.discount{
+    color: rgba(0, 0, 0, 0.5);
+    font-family: 'Integral CF';
+}
+
+
+.viewBtn{
+    padding: 10.2px 49px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+    border-radius: 20px;
+    color: black;
+    font-weight: 600;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.viewall{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+
+/* Flash Sales Product CSS */
+.flash_sales h2{
+    text-align: center;
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Comments Section CSS */
+.comments{
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.comments h1{
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 1.01px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.comment_card{
+    display: flex;
+    gap: 18px;
+    margin: 30px 0 ;
+    overflow-x: auto;
+}
+
+.comment_review{
+    display: flex;
+    width: 350px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    border-radius: 12px;
+    padding: 13px 14px;
+    gap: 13px;
+}
+
+.comment_author{
+    font-weight: 600;
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.comment_body{
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 15.2px;
+}
+
+.checkmark{
+    min-width: 15.5px;
+    max-width: 15.5px;
+    min-height: 15.5px;
+    max-height: 15.5px;
+}
+
+.verified{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.arrowBack, .arrowForward{
+    width: 24px;
+    height: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 2px;
+    cursor: pointer;
+}
+
+
+
+.arrows{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 6px;
+    position: absolute;
+    right: 0;
+    top: 20px;    
+}
+
+
+
+@media screen and (max-width: 1244px){
+    .preview{
+        min-height: 73vh;
+        max-height: 73vh;   
+    }
+
+    .preview .title{
+        font-size: 55px;
+    }
+
+
+    .product_card{
+        width: 245px;
+    }
+}
+
+
+@media screen and (max-width: 1204px){
+    .new_arrivals h2, .flash_sales h2{
+        font-size: 32px;
+    }
+
+    .comments h1{
+        font-size: 28px;
+    }
+
+    .product_card{
+        width: 230px;
+    }
+
+    .card_name{
+        font-size: 13.2px;
+    }
+
+    .price_discount{
+        font-size: 14.5px;
+    }
+}
+
+
+
+@media screen and (max-width: 1024px){
+    .new_arrivals h2, .flash_sales h2{
+        font-size: 30px;
+    }
+
+    .comments h1{
+        font-size: 26px;
+    }
+
+    .product_card{
+        width: 210px;
+    }
+
+    .card_name{
+        font-size: 12.2px;
+    }
+
+    .review_stars{
+        font-size: 13px;
+    }
+
+    .price_discount{
+        font-size: 12.4px;
+    }
+
+
+    .comment_review{
+        width: 315px;
+    }
+
+    .comment_author{
+        font-size: 16.4px;
+    }
+
+    .comment_body{
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (max-width: 786px){
+    .new_arrivals h2, .flash_sales h2{
+        font-size: 28px;
+    }
+
+    .comments h1{
+        font-size: 24.1px;
+    }
+
+    .product_card{
+        width: 180px;
+    }
+    .card_name{
+        font-size: 11.2px;
+    }
+
+    .review_stars{
+        font-size: 13px;
+    }
+
+    .price_discount{
+        font-size: 12.4px;
+    }
+
+
+    .comment_review{
+        width: 315px;
+    }
+
+    .comment_author{
+        font-size: 16.4px;
+    }
+
+    .comment_body{
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (max-width: 713px){
+    .preview .title{
+        font-size: 45px;
+    }
+
+    .preview {
+        max-height: 68vh;
+        min-height: 68vh;
+    }
+}
+
+
+@media screen and (max-width: 490px){
+    .preview .title{
+        font-size: 31px;
+    }
+
+    .preview {
+        max-height: 47vh;
+        min-height: 47vh;
+    }
+    .new_arrivals h2, .flash_sales h2{
+        font-size: 21px;
+    }
+
+    .comments h1{
+        font-size: 18.1px;
+    }
+
+    .product_card{
+        width: 180px;
+    }
+
+    .card_name{
+        font-size: 11.2px;
+    }
+
+    .review_stars{
+        font-size: 13px;
+    }
+
+    .price_discount{
+        font-size: 12.4px;
+    }
+
+
+    .comment_review{
+        width: 315px;
+    }
+
+    .comment_author{
+        font-size: 14.4px;
+    }
+
+    .checkmark{
+        min-width: 13.9px;
+        max-width: 13.9px;
+        min-height: 13.5px;
+        max-height: 13.5px;
+    }
+
+    .comment_body{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 466px){
+    .arrows{
+        top: 21px;
+    }
+
+    
+    .arrowBack, .arrowForward{
+        width: 20px;
+        height: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        padding: 2px;
+        cursor: pointer;
+    }
+
+    .viewBtn{
+        padding: 8.2px 30px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        outline: none;
+        border-radius: 20px;
+        color: black;
+        font-weight: 600;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+}
